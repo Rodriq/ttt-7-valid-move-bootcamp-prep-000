@@ -5,11 +5,10 @@ def valid_move?(board, index)
   m = index-1
   if !index.between?(0, 8)
     false
-  if !position_taken?(board, index)
+  elsif !position_taken?(board, index)
     true
-    elsif position_taken?(board, index)
+   elsif position_taken?(board, index)
     false
-   
   end
 end
 
